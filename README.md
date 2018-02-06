@@ -1,0 +1,2 @@
+# ChromeKancolleExpManager
+艦これの提督経験値を管理するChrome拡張機能
