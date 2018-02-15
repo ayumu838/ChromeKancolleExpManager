@@ -1,6 +1,8 @@
 function screenshot() {
     chrome.tabs.captureVisibleTab(null, { format: "png"}, function (url) {
-        console.log(url);
+        // console.log(url);
+        chrome.runtime.sendMessage({ mode: 'drawimage',data: url}, function(res) {});
+
     });
 }
 
